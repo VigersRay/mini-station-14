@@ -8,7 +8,6 @@ from typing import Iterable
 
 PUBLISH_TOKEN = os.environ["PUBLISH_TOKEN"]
 VERSION = os.environ["GITHUB_SHA"]
-FORK_ID = os.environ['FORK_ID']
 
 RELEASE_DIR = "release"
 
@@ -17,6 +16,7 @@ RELEASE_DIR = "release"
 # Forks should change these to publish to their own infrastructure.
 #
 ROBUST_CDN_URL = "https://cdn.ss14.org/"
+FORK_ID = "mini_station"
 
 def main():
     parser = argparse.ArgumentParser()
